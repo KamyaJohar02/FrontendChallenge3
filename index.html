@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <title>Responsive Centered Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  @media(max-width:640px){
+    main{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border-radius: 14px;
+     margin-top: 12px;
+    
+    }
+  }
+</style>
+<body class="bg-gray-900 sm:flex sm:items-center sm:justify-center min-h-screen">
+    <main class="w-112 bg-gray-800 p-20 flex flex-col items-center justify-center rounded-lg">
+        <img class="w-15 h-15 rounded-full mb-10" src="assets/images/kamya.jpeg" alt="Description of the image"> 
+        <span class="text-white text-xl font-bold">KAMYA JOHAR</span>
+        <p class="text-lime-600 text-xl mb-3 font-semibold">Delhi, India</p>
+        <p class="flex justify-center items-center text-white font-medium text-lg">"Full Stack Developer and an avid reader"</p>
+        <a href="https://github.com/KamyaJohar02" class=" bg-gray-700 w-64 font-bold text-white mt-4 flex justify-center items-center py-4 rounded-md text-lg hover:bg-lime-500">Github</a>
+        <a href="https://www.linkedin.com/in/kamyajohar/" class=" bg-gray-700 w-64 font-bold text-white mt-4 flex justify-center items-center py-4 rounded-md text-lg  hover:bg-lime-500">Linkedin</a>
+        <a href="https://www.frontendmentor.io/profile/KamyaJohar02" class=" bg-gray-700 w-64 font-bold text-white mt-4 flex justify-center items-center py-4 rounded-md text-lg hover:bg-lime-500">Frontend Mentor</a>
+        <a href="https://www.youtube.com/channel/UCiGbysAENc6ZTTbhzs3B9_Q" class=" bg-gray-700 w-64 font-bold text-white mt-4 flex justify-center items-center py-4 rounded-md text-lg hover:bg-lime-500">YouTube</a>
+    </main>
+</body>
+</html>
